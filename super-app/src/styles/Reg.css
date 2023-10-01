@@ -1,0 +1,127 @@
+.reg {
+  display: flex;
+  width: 100%;
+}
+.left-image {
+  /* width: 90vw; */
+  /* width: 65%; */
+  /* height: 100vh; */
+  background-image: url(../images/register.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+}
+.disover-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 141.688%; /* 77.928px */
+  letter-spacing: 1.1px;
+  margin-top: 68vh;
+  margin-left: 3vw;
+}
+.heading-super {
+  margin-left: 2.3em;
+  color: #72db73;
+  font-family: Single Day;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%;
+}
+.header-text {
+  margin-left: 3em;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%;
+}
+.form-content {
+  height: 100vh;
+  width: 50vw;
+  background-color: black;
+}
+.wrap-up {
+  width: 66%;
+  padding-left: 140px;
+  padding-top: 60px;
+}
+.fields {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 400px;
+  height: 33px;
+  border-radius: 3.816px;
+  background: #292929;
+  color: #7c7c7c;
+  font-family: DM Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.401px;
+  border: none;
+  padding-left: 12px;
+}
+.checkbox {
+  color: #7c7c7c;
+  font-family: DM Sans;
+  font-size: 18;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2px;
+  letter-spacing: 0.401px;
+}
+.text {
+  color: #7c7c7c;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+.tnc {
+  width: 420px;
+}
+span {
+  color: #72db73;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 141.7%;
+  letter-spacing: 0.36px;
+}
+.error {
+  color: #f00;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.401px;
+}
+.signup {
+  width: 410px;
+  margin: 20px 0 15px 0px;
+  height: 40px;
+  border-radius: 28px;
+  background: #72db73;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.58px;
+}
+.signup:hover {
+  /* color: #064507; */
+  color: aliceblue;
+  background: #13b613;
+}
