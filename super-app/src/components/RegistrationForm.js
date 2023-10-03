@@ -1,16 +1,5 @@
-// import React, {useState} from 'react'
-
-// const RegistrationForm = () => {
-//   return (
-//     <div>RegistrationForm</div>
-//   )
-// }
-
-// export default RegistrationForm
-
-// RegistrationForm.js
 import React, { useState } from "react";
-import "../styles/Reg.css";
+import "../styles/RegistrationForm.css";
 function RegistrationForm() {
   const [formData, setFormData] = useState({
     name: "",
