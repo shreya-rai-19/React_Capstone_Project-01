@@ -1,0 +1,15 @@
+.card > img{
+    width: 150px;
+height: 85px;
+border-radius: 11.66px;
+
+}
+h3{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 21px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-left: 20px;
+}

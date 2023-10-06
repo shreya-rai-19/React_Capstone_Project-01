@@ -10,7 +10,6 @@ function App() {
     <Routes>
       <Route path="/" element = {<RegisterPage title="Sign Up" />} />
       <Route path="/category" element = {<SelectCatPage title="Category Selection" />} />
-      
       </Routes>
     </>
   );

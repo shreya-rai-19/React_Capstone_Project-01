@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../styles/RegistrationForm.css";
+
+import { useNavigate } from "react-router-dom";
+
 function RegistrationForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -63,6 +66,13 @@ function RegistrationForm() {
         acceptedTerms: false,
       });
     }
+  };
+
+  const navigate = useNavigate();
+
+  const handleSignUpClick = () => {
+    // Redirect to the new page when the "Sign Up" button is clicked
+    navigate('/category');
   };
 
   return (
@@ -162,7 +172,7 @@ function RegistrationForm() {
               </label>
             </div>
 
-            <button className="signup" type="submit">
+            <button onClick={handleSignUpClick} className="signup" type="submit">
               SIGN UP
             </button>
           </div>
