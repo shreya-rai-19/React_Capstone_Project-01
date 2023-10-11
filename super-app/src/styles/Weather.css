@@ -1,0 +1,91 @@
+.date-time-section {
+  border-radius: 19px 19px 0px 0px;
+  background: #ff4ade;
+  width: 26.3em;
+  height: 42px;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.date {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.688%;
+  letter-spacing: 0.66px;
+  margin-right: 93px;
+}
+.time {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.current-weather {
+  display: flex;
+}
+.condition {
+  width: 5.7em;
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.condition-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 20px;
+}
+.line {
+  width: 1px;
+  height: 46px;
+  background-color: #fff;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 30px;
+}
+.temperature-pressure {
+  width: 8em;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+.temp {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 44.462px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%;
+}
+.icon-img {
+  margin-top: 10px;
+}
+.texts {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 13.982px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%;
+}
+.wind-humidity {
+  width: 8em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.text-and-icon {
+  display: flex;
+  height: 40px;
+  width: 126px;
+  gap: 8px;
+}

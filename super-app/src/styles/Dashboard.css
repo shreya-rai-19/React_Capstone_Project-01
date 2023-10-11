@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+}
+.dashboard {
+  display: flex;
+}
+.left-dashboard {
+  width: 65vw;
+  height: 90vh;
+  padding: 37px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.right-dashboard {
+  width: 35vw;
+  height: 100vh;
+  background-color: black;
+}
+.top {
+  display: flex;
+}
+.top-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.profile-section {
+  border-radius: 19px;
+  background: #5746ea;
+  width: 34em;
+  height: 13em;
+  padding: 20px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+.weather-section {
+  border-radius: 19px;
+  background: #101744;
+  width: 36.3em;
+  height: 10em;
+  flex-shrink: 0;
+}
+.notes-section {
+  border-radius: 19px;
+  background: #f1c75b;
+  height: 24.5em;
+  width: 20em;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.timer-section {
+  border-radius: 19px;
+  background: #1e2343;
+  width: 60em;
+  height: 11em;
+  margin-top: 15px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.news-section {
+  border-radius: 19px 19px 0px 0px;
+  width: 400px;
+  height: 90px;
+  flex-shrink: 0;
+}

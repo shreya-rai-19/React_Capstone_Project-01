@@ -91,13 +91,18 @@ const SelectCatPage = () => {
     }
   }, [selectedCardNames]);
 
+  useEffect(() => {
+    // Store selectedCardNames in local storage
+    localStorage.setItem("selectedCategories", JSON.stringify(selectedCardNames));
+  }, [selectedCardNames]);
+  
   const navigate = useNavigate();
 
   const validateSelection = () => {
     if (selectedCardNames.length < 3) {
       setError("Minimum 3 category required");
     } else {
-      navigate("./registration");
+      navigate("./homepage");
     }
   };
 

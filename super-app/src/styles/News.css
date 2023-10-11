@@ -1,0 +1,37 @@
+/* News.css */
+.news-container {
+    text-align: left;
+  }
+  
+  .news-article {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 660px;
+  }
+  
+  .news-article img {
+    max-width: 100%;
+    /* height: auto; */
+  }
+  
+  .news-article h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+ color: black;
+  }
+  
+  .news-article p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .news-article a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

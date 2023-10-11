@@ -1,0 +1,67 @@
+.profile-card {
+  border-radius: 33.428px;
+  width: 450px;
+  height: 200px;
+  flex-shrink: 0;
+  display: flex;
+}
+.profile-image {
+  height: 220px;
+}
+.profile-info {
+  margin-left: 35px;
+}
+.selected-categories-list {
+  max-height: 117px;
+  overflow-y: scroll;
+}
+.selected-categories-list::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.selected-categories-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 2px;
+}
+
+.selected-categories-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.688%;
+  letter-spacing: 0.42px;
+  padding: 7px;
+}
+.username-p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66.188%;
+  letter-spacing: 0.82px;
+}
+.li-keys {
+  border-radius: 36.947px;
+  background: #9f94ff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.563px;
+  width: 120px;
+  height: 12px;
+  padding-bottom: 20px;
+  padding-left: 17px;
+}

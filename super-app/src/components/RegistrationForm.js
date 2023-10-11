@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/RegistrationForm.css";
+
 
 import { useNavigate } from "react-router-dom";
 
 function RegistrationForm() {
+
   const [formData, setFormData] = useState({
     name: "",
     username: "",
@@ -14,10 +16,14 @@ function RegistrationForm() {
 
   const [errors, setErrors] = useState({});
 
+  let name, value;
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const {  type, checked } = e.target;
     const newValue = type === "checkbox" ? checked : value;
 
+    name = e.target.name;
+    value = e.target.value;
+    setFormData({...formData, [name]:value})
     setFormData({
       ...formData,
       [name]: newValue,
@@ -33,6 +39,7 @@ function RegistrationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    console.log(formData); 
     // Validation
     const newErrors = {};
     if (!formData.name) {
@@ -55,16 +62,22 @@ function RegistrationForm() {
       setErrors(newErrors);
     } else {
       // Registration successful - Save data to local storage
-      localStorage.setItem("registrationData", JSON.stringify(formData));
-      alert("Registration successful! Data saved in local storage.");
-      // Reset the form
-      setFormData({
-        name: "",
-        username: "",
-        mobile: "",
-        email: "",
-        acceptedTerms: false,
-      });
+
+
+    //   const existingData = localStorage.setItem("registrationData", JSON.stringify(formData));
+    //   const updatedData = [...existingData, formData];
+
+    // // Save the updated data to local storage
+    // localStorage.setItem("registrationData", JSON.stringify(updatedData));
+    //   alert("Registration successful! Data saved in local storage.");
+    //   // Reset the form
+    //   setFormData({
+    //     name: "",
+    //     username: "",
+    //     mobile: "",
+    //     email: "",
+    //     acceptedTerms: false,
+    //   });
     }
   };
 
