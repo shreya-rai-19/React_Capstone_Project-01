@@ -28,57 +28,28 @@ const News = () => {
 
   return (
     <div className="news-container">
-      {/* {currentNews && (
-        <div className="news-article">
-          <img src={currentNews.urlToImage} alt={currentNews.title} />
-          <div className="article-details">
-            <p>Date: {new Date(currentNews.publishedAt).toLocaleDateString()}</p>
-            <p>Time: {new Date(currentNews.publishedAt).toLocaleTimeString()}</p>
-          </div>
-          <h2>{currentNews.title}</h2>
-          <p>{currentNews.description}</p>
-          <a href={currentNews.url} target="_blank" rel="noopener noreferrer">
-            Read more
-          </a>
-        </div>
-      )} */}
-
       {currentNews && (
         <>
-       {/* <div className="top-news">
+          <div className="top-news">
+            <div className="img-news">
+              <img src={currentNews.urlToImage} alt={currentNews.title} />
+              <div className="img-overlay"></div>
+              <div className="news-details">
+                <div className="news-title">{currentNews.title}</div>
+                <div className="date-time-news">
+                  {new Date(currentNews.publishedAt).toLocaleDateString()}
+                  &nbsp;&nbsp;| &nbsp;
+                  {new Date(currentNews.publishedAt).toLocaleTimeString()}
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className="img-news">
-          <img src={currentNews.urlToImage} alt={currentNews.title} />
-        </div>
-        <div className="news-title">{currentNews.title}</div> 
-        <div className="date-time-news">
-          {new Date(currentNews.publishedAt).toLocaleDateString()}
-          {new Date(currentNews.publishedAt).toLocaleTimeString()}
-        </div>
-      
-      </div> */}
-
-      <div className="top-news">
-  <div className="img-news">
-    <img src={currentNews.urlToImage} alt={currentNews.title} />
-    <div className="img-overlay"></div>
-    <div className="news-details">
-    <div className="news-title">{currentNews.title}</div> 
-    <div className="date-time-news">
-      {new Date(currentNews.publishedAt).toLocaleDateString()}&nbsp;&nbsp;| &nbsp;
-      {new Date(currentNews.publishedAt).toLocaleTimeString()}
-    </div>
-  </div>
-  </div>
-
-</div>
-
-      
-      <div className="bottom-news">
-        <div className="news-text">{currentNews.description}</div>
-        <div className="green_btn">Browse</div>
-      </div>
-      </>
+          <div className="bottom-news">
+            <div className="news-text">{currentNews.description}</div>
+            {/* <div className="green_btn">Browse</div> */}
+          </div>
+        </>
       )}
     </div>
   );

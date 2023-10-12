@@ -21,7 +21,6 @@ const Dashboard = () => {
           <div className="top-right">
             <div className="notes-section">
               <Notes />
-              
             </div>
           </div>
         </div>
