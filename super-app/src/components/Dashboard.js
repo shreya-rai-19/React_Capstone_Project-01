@@ -20,8 +20,8 @@ const Dashboard = () => {
           </div>
           <div className="top-right">
             <div className="notes-section">
-              {/* <Notes /> */}
-              Notes
+              <Notes />
+              
             </div>
           </div>
         </div>

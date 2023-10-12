@@ -1,5 +1,70 @@
-/* News.css */
-.news-container {
+.news-container{
+  width: 30em;
+  height: 30em;
+}
+.img-news {
+  position: relative;
+}
+.top-news{
+  width: 30em;
+  height: 26.5em;
+  position: relative;
+}
+.img-news>img{
+  width: 24em;
+  height: 26.5em;
+  /* height: auto; */
+  display: block;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);  /*Adjust the alpha value to control the transparency */
+}
+.news-details{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.74);
+}
+.news-title{
+  color: #FFF;
+font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0.64px;
+}
+.date-time-news{
+  color: #FFF;
+font-family: Roboto;
+font-size: 18.249px;
+font-style: normal;
+font-weight: 600;
+line-height: 141.688%; /* 25.857px */
+letter-spacing: 0.365px;
+}
+.bottom-news{
+  border-radius: 0px 0px 19px 19px;
+background: #FFF;
+width: 30em;
+}
+.news-text{
+  color: #272727;
+  text-align: justify;
+  font-family: Roboto;
+  font-size: 18.25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 161.688%; /* 29.508px */ 
+}
+
+/* .news-container {
     text-align: left;
   }
   
@@ -14,7 +79,7 @@
   
   .news-article img {
     max-width: 100%;
-    /* height: auto; */
+  
   }
   
   .news-article h2 {
@@ -34,4 +99,5 @@
     text-decoration: none;
     font-weight: bold;
   }
-  
+   */
+
