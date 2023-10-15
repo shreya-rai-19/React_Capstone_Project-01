@@ -26,8 +26,7 @@ const Dashboard = () => {
         </div>
         <div className="bottom">
           <div className="timer-section">
-            {/* <Timer /> */}
-            timer
+            <Timer />
           </div>
         </div>
       </div>

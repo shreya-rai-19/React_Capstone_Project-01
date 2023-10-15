@@ -60,11 +60,11 @@
 .timer-section {
   border-radius: 19px;
   background: #1e2343;
-  width: 60em;
+  width: 58em;
   height: 11em;
-  margin-top: 15px;
+  /* margin-top: 15px;
   padding: 20px;
-  flex-shrink: 0;
+  flex-shrink: 0; */
 }
 .news-section {
   border-radius: 19px 19px 0px 0px;

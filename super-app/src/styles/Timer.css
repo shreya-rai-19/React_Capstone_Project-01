@@ -1,0 +1,126 @@
+.timer-container {
+  border-radius: 19px;
+  background: #1e2343;
+  width: 58em;
+  height: 11em;
+  margin-top: 15px;
+  padding: 20px;
+  display: flex;
+  gap: 60px;
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #191e39;
+  stroke-width: 6px;
+}
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke-width: 6px;
+  stroke: #ff6a6a;
+}
+.CircularProgressbar-background {
+  fill: #191e39;
+}
+.CircularProgressbar .CircularProgressbar-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 1.6px;
+}
+.timer-circle {
+  width: 20em;
+  height: 10em;
+}
+
+/* ----------------------------------------- */
+
+.timer-controls {
+  width: 30em;
+  height: 10em;
+}
+.timer-time-container{
+    display: flex;
+    gap: 20px;
+}
+.time-hours{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.time-mins{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+.time-secs{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+} 
+.timer-text{
+    color: #949494;
+font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: 105.688%; /* 27.479px */
+letter-spacing: 1.04px;
+margin: auto;
+}
+.increase{
+background-image: url(../images/Increase.png);
+background-repeat: no-repeat;
+width: 30px;
+height: 20px;
+background-color: #1E2343;
+border: none;
+margin: auto;
+}
+.decrease{
+background-image: url(../images/Decrease.png);
+background-repeat: no-repeat;
+width: 30px;
+height: 20px;
+background-color: #1E2343;
+border: none;
+margin: auto;
+}
+.time-value{
+    color: #FFF;
+font-family: Roboto;
+font-size: 50px;
+font-style: normal;
+font-weight: 300;
+line-height: 105.688%; /* 52.844px */
+letter-spacing: 2px;
+width: 65px;
+height: 53px;
+margin: auto;
+background-color: #1E2343;
+border: none;
+}
+.start-Stop {
+    border-radius: 20px;
+    background: #FF6A6A;
+    color: #FFF;
+font-family: Roboto;
+font-size: 31px;
+font-style: normal;
+font-weight: 400;
+line-height: 105.688%; /* 32.763px */
+letter-spacing: 1.24px;
+width: 11em;
+}
+.colon{
+    height: 10em;
+}
+
+
+.timer-display{
+  background-image: url('../images/Ellipse\ 3.png');
+  height: 100px;
+  width: 300px;
+}

@@ -92,7 +92,6 @@ const SelectCatPage = () => {
   }, [selectedCardNames]);
 
   useEffect(() => {
-    // Store selectedCardNames in local storage
     localStorage.setItem("selectedCategories", JSON.stringify(selectedCardNames));
   }, [selectedCardNames]);
   

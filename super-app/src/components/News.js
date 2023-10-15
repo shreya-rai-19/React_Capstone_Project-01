@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../styles/News.css";
+import { useNavigate } from "react-router-dom";
 
 const News = () => {
   const [currentNews, setCurrentNews] = useState(null);
 
+  const navigate = useNavigate();
+  const handleBrowseClick = () => {
+    navigate('/category/homepage/entertainment');
+  };
   useEffect(() => {
     const apiKey = "0ef9bc267b5d444eb7794bea4e4ce1a3";
     const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
@@ -47,8 +52,8 @@ const News = () => {
 
           <div className="bottom-news">
             <div className="news-text">{currentNews.description}</div>
-            {/* <div className="green_btn">Browse</div> */}
           </div>
+          <button onClick={handleBrowseClick} className="green_btn1">Browse</button>
         </>
       )}
     </div>
