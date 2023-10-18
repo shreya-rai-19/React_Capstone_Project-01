@@ -98,61 +98,61 @@
 // export default Timer;
 
 
-import React, { Component } from 'react';
-import { CountdownCircleTimer } from 'react-countdown-circle-timer';
-// import audioFile from '../images/iphone_timer_sound.mp3';
-import "../styles/Timer.css";
+// import React, { Component } from 'react';
+// import { CountdownCircleTimer } from 'react-countdown-circle-timer';
+// // import audioFile from '../images/iphone_timer_sound.mp3';
+// import "../styles/Timer.css";
 
-class Timer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
-      isRunning: false,
-    };
-    this.timerInterval = null;
-    this.audio = new Audio('../images/iphone_timer_sound.mp3');
-  }
+// class Timer extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       hours: 0,
+//       minutes: 0,
+//       seconds: 0,
+//       isRunning: false,
+//     };
+//     this.timerInterval = null;
+//     this.audio = new Audio('../images/iphone_timer_sound.mp3');
+//   }
 
-  handleTimeChange = (field, value) => {
-    this.setState({ [field]: value });
-  }
+//   handleTimeChange = (field, value) => {
+//     this.setState({ [field]: value });
+//   }
 
-  startTimer = () => {
-    const { hours, minutes, seconds } = this.state;
-    const totalSeconds = hours * 3600 + minutes * 60 + seconds;
+//   startTimer = () => {
+//     const { hours, minutes, seconds } = this.state;
+//     const totalSeconds = hours * 3600 + minutes * 60 + seconds;
 
-    if (totalSeconds <= 0) {
-      alert('Please set a valid timer duration.');
-      return;
-    }
+//     if (totalSeconds <= 0) {
+//       alert('Please set a valid timer duration.');
+//       return;
+//     }
 
-    this.setState({ isRunning: true });
+//     this.setState({ isRunning: true });
 
-    this.timerInterval = setInterval(() => {
-      if (totalSeconds > 0) {
-        this.setState((prevState) => ({ seconds: prevState.seconds - 1 }));
-      } else {
-        this.stopTimer();
-        this.audio.play();
-      }
-    }, 1000);
-  }
+//     this.timerInterval = setInterval(() => {
+//       if (totalSeconds > 0) {
+//         this.setState((prevState) => ({ seconds: prevState.seconds - 1 }));
+//       } else {
+//         this.stopTimer();
+//         this.audio.play();
+//       }
+//     }, 1000);
+//   }
 
-  stopTimer = () => {
-    clearInterval(this.timerInterval);
-    this.setState({ isRunning: false });
-  }
+//   stopTimer = () => {
+//     clearInterval(this.timerInterval);
+//     this.setState({ isRunning: false });
+//   }
 
-  render() {
-    const { hours, minutes, seconds, isRunning } = this.state;
-    const totalSeconds = hours * 3600 + minutes * 60 + seconds;
+//   render() {
+//     const { hours, minutes, seconds, isRunning } = this.state;
+//     const totalSeconds = hours * 3600 + minutes * 60 + seconds;
 
-    return (
-      <div className="timer-container">
-        <div className="timer-controls">
+//     return (
+//       <div className="timer-container">
+//         <div className="timer-controls">
           {/* <div className="time-inputs">
             <div>
               <button onClick={() => this.handleTimeChange('hours', hours + 1)}>+</button>
@@ -170,7 +170,9 @@ class Timer extends Component {
               <button onClick={() => this.handleTimeChange('seconds', seconds - 1)}>-</button>
             </div>
           </div> */}
-          <div className='timer-time-container'>
+
+
+          {/* <div className='timer-time-container'>
             <div className='time-hours'>
               <p className='timer-text'>Hours</p>
               <button className="increase" onClick={() => this.handleTimeChange('hours', hours + 1)}></button>
@@ -221,4 +223,5 @@ class Timer extends Component {
   }
 }
 
-export default Timer;
+export default Timer; */}
+

@@ -53,3 +53,6 @@
   border-radius: 9.159px;
   box-shadow: 2px 6px 15px #72db73;
 }
+.movie-card img:hover{
+  transform: scale(1.18);
+}

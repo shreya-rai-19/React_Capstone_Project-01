@@ -4,6 +4,7 @@ import Notes from "./Notes";
 import News from "./News";
 import Weather from "./Weather";
 import Timer from "./Timer";
+import TimerComponent from "./TimerComponent";
 import "../styles/Dashboard.css";
 const Dashboard = () => {
   return (
@@ -26,7 +27,8 @@ const Dashboard = () => {
         </div>
         <div className="bottom">
           <div className="timer-section">
-            <Timer />
+            {/* <Timer /> */}
+            <TimerComponent />
           </div>
         </div>
       </div>
