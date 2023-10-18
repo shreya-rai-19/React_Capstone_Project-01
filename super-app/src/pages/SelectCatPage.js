@@ -121,7 +121,7 @@ const SelectCatPage = () => {
     <div className="cat_main">
       <div className="selected-card-names">
         <div className="heading-super">
-          <label>Super app</label>
+          Super app
         </div>
         <br />
         <div className="heading-text ">
